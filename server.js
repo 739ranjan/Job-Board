@@ -19,7 +19,7 @@ app.use('/api', authRoutes);
 app.use('/api', jobRoutes);
 app.use('/api', applicationRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.HOST || 5000;
 
 app.get('/', (req, res) => {
   res.send('Working.....');
